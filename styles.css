@@ -36,6 +36,14 @@ nav ul li a {
     text-decoration: none;
 }
 
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+} 
+
 /* Hero section */
 .hero {
     background-color: #333;
@@ -151,14 +159,6 @@ nav ul li a {
     transition: 0.4s;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-}
-
 section {
     margin-bottom: 2rem;
 }
@@ -196,7 +196,7 @@ section {
     color: #004d40;
 }
 
-.post:hover, .weather-box:hover {
+.weather-box:hover {
     transform: translateY(-5px);
     transition: transform 0.3s ease;
 }

@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const postsContainer = document.getElementById("posts");
     let page = 1; // Start from page 1
 
-    // Function to fetch posts
+    // Function to fetch posts 
     const fetchPosts = async () => {
         try {
             const response = await fetch(`https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=3`);

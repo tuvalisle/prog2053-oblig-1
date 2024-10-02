@@ -17,10 +17,12 @@ header {
     flex-direction: column;
 }
 
-h1 {
+.logo {
     margin: 0;
     padding-bottom: 10px;
     font-family:'Times New Roman', Times, serif;
+    width: 150px;
+    height: 100px;
 }
 
 nav ul {
@@ -64,7 +66,7 @@ footer {
 }
 
 .hero-image .image-placeholder {
-    width: 300px;
+    width: 350px;
     height: 200px;
     background-color: #777;
     text-align: center;
@@ -163,10 +165,22 @@ section {
     margin-bottom: 2rem;
 }
 
-#posts, #weather {
+#posts {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: space-between;
+}
+
+.post {
+    flex: 0 0 32%; /* Hver post tar omtrent en tredjedel av bredden */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #e0f7fa;
+    padding: 1.5rem;
+    border: 1px solid #00796b;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 #weather {
@@ -174,6 +188,9 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .weather-box {

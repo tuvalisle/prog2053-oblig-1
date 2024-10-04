@@ -169,7 +169,7 @@ footer {
 }
 
 
-#cta-button {
+.cta-button {
     background-color: rgb(0, 128, 255);
     color: white;
     padding: 5px 15px;
@@ -178,7 +178,7 @@ footer {
     border-radius: 5px;
 }
 
-#cta-button:hover {
+.cta-button:hover {
     background-color: white;
     color: rgb(0, 128, 255);
     transition: 0.4s;

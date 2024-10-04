@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    // Update the weather data every 60 seconds (60000 ms)
+    // Update the weather data every 60 seconds
     setInterval(displayWeather, 60000);
 
     // Initial weather display

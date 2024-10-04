@@ -11,6 +11,10 @@ header {
     padding: 20px;
 }
 
+.header-container h1 {
+    color: white;
+}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -129,10 +133,15 @@ footer {
     font-style: italic;
 }
 
-.quote span {
+.quote cite {
     display: block;
     margin-top: 10px;
-    font-weight: bold;
+    font-style: italic;
+}
+
+.quote p {
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 /* Call to action section */
@@ -175,12 +184,17 @@ section {
     flex: 0 0 32%; /* Hver post tar omtrent en tredjedel av bredden */
     box-sizing: border-box;
     margin-bottom: 20px;
-    background-color: #e0f7fa;
+    background-color: #b9cbe8;
     padding: 1.5rem;
-    border: 1px solid #00796b;
+    border: 1px solid #6683c7;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #00204d;
 }
 
 #weather {
@@ -188,15 +202,17 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 2rem;
+    margin-right: 50px;
+    margin-left: 50px;
     display: flex;
-    flex-wrap: wrap;
     gap: 1rem;
+
 }
 
 .weather-box {
-    background-color: #e0f7fa;
+    background-color: #b9cbe8;
     padding: 1.5rem;
-    border: 1px solid #00796b;
+    border: 1px solid #6683c7;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -205,12 +221,12 @@ section {
 .weather-box h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #00796b;
+    color: #607fc8;
 }
 
 .weather-box p {
     font-size: 1.1rem;
-    color: #004d40;
+    color: #00204d;
 }
 
 .weather-box:hover {
